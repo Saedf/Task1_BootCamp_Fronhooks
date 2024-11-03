@@ -1,6 +1,6 @@
 @import url("./font.css");
 /* Reset CSS */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -142,6 +142,9 @@ body {
   font-family: "vazir";
   color: var(--color--body);
 }
+h1,h2,button,input{
+    font-family: 'vazir';
+}
 :root {
   --color--body: ##333333;
   --color--primary: #219f95;
@@ -150,4 +153,99 @@ body {
   --color--TextSmall: #696969;
   --color--Box: #afcedd;
   --color--white: #fff;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    padding: 5.6rem;
+    margin: 0 auto;
+}
+.container .container__title{
+color: var(--color--TextLarge);
+font-size: 1.6rem;
+font-weight: 900;
+margin-bottom: 1.3rem;
+
+}
+.requset__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.request-item{
+
+  
+
+}
+.upload-info{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.request__upload{
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ gap: 0.6rem;
+ flex: 1;
+ margin-bottom: 1.6rem;
+}
+.request__upload > p{
+    background-color: var(--color--Box);
+    color: var(--color--TextSmall);
+    font-size:1rem ;
+    font-weight: 900;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.request__upload > span{
+ color: var(--color--Title);
+ font-size: 1.6rem;
+ font-weight: 600;
+}
+.request__date{
+  color: var(--color--TextSmall);
+  font-weight: 400;
+  font-size: 1.2rem;
+  
+}
+.request__ozviat{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ gap: 0.3rem;
+}
+.request__info{
+
+}
+.request__view{
+
+}
+@media screen and (min-width:768px) {
+    .requset__container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container .container__title{
+
+        font-size: 2.2rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .requset__container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
 }
