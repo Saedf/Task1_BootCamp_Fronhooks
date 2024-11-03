@@ -142,8 +142,11 @@ body {
   font-family: "vazir";
   color: var(--color--body);
 }
-h1,h2,button,input{
-    font-family: 'vazir';
+h1,
+h2,
+button,
+input {
+  font-family: "vazir";
 }
 :root {
   --color--body: ##333333;
@@ -155,97 +158,146 @@ h1,h2,button,input{
   --color--white: #fff;
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
-
-    padding: 5.6rem;
-    margin: 0 auto;
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 1.5rem;
+  margin-top: 5.6rem;
 }
-.container .container__title{
-color: var(--color--TextLarge);
-font-size: 1.6rem;
-font-weight: 900;
-margin-bottom: 1.3rem;
-
+.container .container__title {
+  color: var(--color--TextLarge);
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1.3rem;
 }
-.requset__container{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.requset__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
-.request-item{
+.request-item {
+  /* width: 400px; */
+  max-width: 100%;
+  padding: 1.7rem;
+}
 
+.upload-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.request__upload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  flex: 1;
   
-
 }
-.upload-info{
- display: flex;
- align-items: center;
- justify-content: space-between;
+.request__upload > p {
+  background-color: var(--color--Box);
+  color: var(--color--Title);
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
-.request__upload{
- display: flex;
- align-items: center;
- justify-content: flex-start;
- gap: 0.6rem;
- flex: 1;
- margin-bottom: 1.6rem;
+.request__upload > span {
+  color: var(--color--Title);
+  font-size: 1.6rem;
+  font-weight: 600;
 }
-.request__upload > p{
-    background-color: var(--color--Box);
-    color: var(--color--TextSmall);
-    font-size:1rem ;
-    font-weight: 900;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-}
-.request__upload > span{
- color: var(--color--Title);
- font-size: 1.6rem;
- font-weight: 600;
-}
-.request__date{
+.request__date {
   color: var(--color--TextSmall);
   font-weight: 400;
   font-size: 1.2rem;
+}
+.request__ozviat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.3rem;
+ margin: 1.6rem 0;
+}
+.request__ozviat > h2 {
+  color: var(--color--TextLarge);
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+.request__ozviat > p {
+  color: var(--color--TextSmall);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.requset__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
   
 }
-.request__ozviat{
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- justify-content: center;
- gap: 0.3rem;
+.request__info {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  
+  
 }
-.request__info{
-
-}
-.request__view{
-
-}
-@media screen and (min-width:768px) {
-    .requset__container{
-        grid-template-columns: 1fr 1fr;
-    }
-    .container .container__title{
-
-        font-size: 2.2rem;
-    }
-
+.request__img{
 
 }
+.request__img > img{
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.request__info > span {
+  color: var(--color--TextLarge);
+  font-weight: 700;
+  font-size: 1.6rem;
 
+}
+.request__view {
+  color: var(--color--white);
+  font-weight: 500;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: var(--color--primary);
+  padding: 2rem 1.4rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .requset__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container .container__title {
+    font-size: 2.2rem;
+  }
+  .request__view{
+    font-size: 1.6rem;
+  }
+}
 
-@media screen and (min-width:1024px) {
-    .requset__container{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-
+@media screen and (min-width: 1024px) {
+  .requset__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
