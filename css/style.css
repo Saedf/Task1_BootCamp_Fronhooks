@@ -193,7 +193,6 @@ input {
   justify-content: flex-start;
   gap: 0.6rem;
   flex: 1;
-  
 }
 .request__upload > p {
   background-color: var(--color--Box);
@@ -224,7 +223,7 @@ input {
   align-items: flex-start;
   justify-content: center;
   gap: 0.3rem;
- margin: 1.6rem 0;
+  margin: 1.6rem 0;
 }
 .request__ozviat > h2 {
   color: var(--color--TextLarge);
@@ -240,22 +239,16 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  
 }
 .request__info {
- 
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.8rem;
-  
-  
 }
-.request__img{
-
+.request__img {
 }
-.request__img > img{
+.request__img > img {
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -268,7 +261,6 @@ input {
   color: var(--color--TextLarge);
   font-weight: 700;
   font-size: 1.6rem;
-
 }
 .request__view {
   color: var(--color--white);
@@ -288,10 +280,7 @@ input {
   .requset__container {
     grid-template-columns: 1fr 1fr;
   }
-  .container .container__title {
-    font-size: 2.2rem;
-  }
-  .request__view{
+  .request__view {
     font-size: 1.6rem;
   }
 }
